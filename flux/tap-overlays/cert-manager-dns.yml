@@ -17,8 +17,8 @@ stringData:
       template:
         spec: 
           containers:
-          #@overlay/match by="name"
-          - name: cert-manager
+          - #@overlay/match by=overlay.subset({"name": "cert-manager-controller"}), expects=1
             args:
+            #@overlay/append
             - --dns01-recursive-nameservers=10.220.136.2:53,10.220.136.2:53
             - --dns01-recursive-nameservers-only
