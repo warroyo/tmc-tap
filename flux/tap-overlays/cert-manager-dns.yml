@@ -9,10 +9,9 @@ type: Opaque
 stringData:
   cert-man-recursive-ns.yaml: |
     #@ load("@ytt:overlay", "overlay")
-    #@overlay/match by=overlay.subset({"kind": "Deployment", "metadata": {"name": "cert-manager"}})
+    #@overlay/match by=overlay.subset({"kind": "Deployment", "metadata": {"name": "cert-manager" }}), expects=1
+
     ---
-    apiVersion: apps/v1
-    kind: Deployment
     spec:
       template:
         spec: 
@@ -21,4 +20,4 @@ stringData:
             args:
             #@overlay/append
             - --dns01-recursive-nameservers=10.220.136.2:53,10.220.136.2:53
-            - --dns01-recursive-nameservers-only
+            - --dns01-recursive-nameservers-only  
