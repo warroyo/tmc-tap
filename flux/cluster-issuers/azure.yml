@@ -19,6 +19,6 @@ spec:
           subscriptionID: 31f60aa7-0ea5-47af-85b2-27e792a36288
           tenantID: b39138ca-3cee-4b4a-a4d6-cd83d9dd62f0
           resourceGroupName: main-dns
-          hostedZoneName: ct-tap.h2o-4-20916.h2o.vmware.com
+          hostedZoneName: ct-tap.azure.warroyo.com
           # Azure Cloud Environment, default to AzurePublicCloud
           environment: AzurePublicCloud
