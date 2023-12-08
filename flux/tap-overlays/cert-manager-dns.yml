@@ -19,5 +19,5 @@ stringData:
           - #@overlay/match by=overlay.subset({"name": "cert-manager-controller"}), expects=1
             args:
             #@overlay/append
-            - --dns01-recursive-nameservers=10.220.136.3:53,0.220.136.2:53
+            - --dns01-recursive-nameservers=10.220.136.3:53,10.220.136.2:53
             - --dns01-recursive-nameservers-only  
