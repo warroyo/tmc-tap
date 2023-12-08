@@ -19,6 +19,6 @@ spec:
       value:
         autoscaling.knative.dev/minScale: "1"
     - name: gitops_repository
-      value: https://github.com/warroyo/tap-gitops
+      value: https://github.com/warroyo/tmc-tap
     - name: gitops_branch
       value: main
