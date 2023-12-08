@@ -6,7 +6,7 @@ metadata:
   namespace: tanzu-continuousdelivery-resources
 spec:
   interval: 10m0s
-  path: ./apps/clustergroups/costco-travel-tap
+  path: ./flux/apps/clustergroups/costco-travel-tap
   prune: true
   postBuild:
     substitute:
