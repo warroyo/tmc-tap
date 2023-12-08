@@ -5,7 +5,7 @@
 namespaces:
 - name: dev
   #! scanpolicy: lax
-  #! pipeline: java
+  pipeline: java
   #! limits:
   #!   default:
   #!     cpu: 1200m
