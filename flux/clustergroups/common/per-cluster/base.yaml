@@ -5,7 +5,7 @@ metadata:
   namespace: tanzu-continuousdelivery-resources
 spec:
   interval: 10m0s
-  path: clusters/${cluster_name}
+  path: flux/clusters/${cluster_name}
   prune: true
   postBuild:
     substitute:

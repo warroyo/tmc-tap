@@ -27,7 +27,7 @@ spec:
   - name: group-apps
     namespace: tanzu-continuousdelivery-resources
   interval: 10m0s
-  path: clustergroups/common/per-cluster
+  path: flux/clustergroups/common/per-cluster
   postBuild:
     substituteFrom:
       - kind: Secret
