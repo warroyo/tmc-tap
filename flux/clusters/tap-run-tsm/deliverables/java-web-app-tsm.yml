@@ -2,6 +2,7 @@ apiVersion: carto.run/v1alpha1
 kind: Deliverable
 metadata:
   name: tanzu-java-web-app-tsm
+  namespace: dev
   labels:
     app.kubernetes.io/part-of: tanzu-java-web-app-tsm
     apps.tanzu.vmware.com/has-tests: "true"
