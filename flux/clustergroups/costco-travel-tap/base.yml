@@ -44,7 +44,7 @@ metadata:
   namespace: tanzu-continuousdelivery-resources
 spec:
   dependsOn:
-  - name: group-apps
+  - name: group-apps-post
     namespace: tanzu-continuousdelivery-resources
   interval: 10m0s
   path: flux/clustergroups/common/per-cluster
