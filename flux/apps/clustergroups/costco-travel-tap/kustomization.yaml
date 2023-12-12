@@ -7,3 +7,4 @@ resources:
 - ../../base/cluster-name-secret/
 - ../../base/cluster-issuers
 - ../../base/tap-overlays
+- intial-namespaces.yml
