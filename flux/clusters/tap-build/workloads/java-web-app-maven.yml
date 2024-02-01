@@ -14,7 +14,7 @@ spec:
         artifactId: sample-app
         groupId: com.warroyo
         type: jar
-        version: 1.0.1
+        version: 1.0.0
     - name: annotations
       value:
         autoscaling.knative.dev/minScale: "1"
