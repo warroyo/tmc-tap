@@ -8,6 +8,10 @@ metadata:
   name: tanzu-java-web-maven
   namespace: dev
 spec:
+  build:
+    env:
+    - name: BP_JAVA_APP_SERVER
+      value: tomcat
   params:
     - name: maven
       value:
