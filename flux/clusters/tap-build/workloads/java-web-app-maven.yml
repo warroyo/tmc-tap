@@ -15,6 +15,7 @@ spec:
         groupId: com.warroyo
         type: jar
         version: 1.0.2
+        classifier: plain
     - name: annotations
       value:
         autoscaling.knative.dev/minScale: "1"
