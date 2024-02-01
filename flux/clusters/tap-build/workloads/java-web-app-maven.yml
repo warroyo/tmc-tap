@@ -8,18 +8,13 @@ metadata:
   name: tanzu-java-web-maven
   namespace: dev
 spec:
-  build:
-    env:
-    - name: BP_JAVA_APP_SERVER
-      value: tomcat
   params:
     - name: maven
       value:
         artifactId: sample-app
         groupId: com.warroyo
         type: jar
-        version: 1.0.2
-        classifier: plain
+        version: 1.0.1
     - name: annotations
       value:
         autoscaling.knative.dev/minScale: "1"
