@@ -1,0 +1,24 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  labels:
+    app.kubernetes.io/part-of: tanzu-java-web-maven
+    apps.tanzu.vmware.com/workload-type: web
+    apps.tanzu.vmware.com/has-tests: "true"
+  name: tanzu-java-web-maven
+  namespace: dev
+spec:
+  params:
+    - name: maven
+      value:
+        artifactId: sample-app
+        groupId: com.warroyo
+        type: jar
+        version: 1.0.1
+    - name: annotations
+      value:
+        autoscaling.knative.dev/minScale: "1"
+    - name: gitops_repository
+      value: https://github.com/warroyo/tmc-tap
+    - name: gitops_branch
+      value: main
