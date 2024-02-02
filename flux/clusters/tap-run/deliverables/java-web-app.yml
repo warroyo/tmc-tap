@@ -35,6 +35,7 @@ metadata:
   name: java-web-app-config-slice
   namespace: dev
 spec:
+  secretStrategy: applicationProperties
   configurationSource: app-config-source
   content:
   - java-web-app/dev
