@@ -8,6 +8,7 @@ metadata:
 spec:
   targets:
     - ./components/tanzu-java-web-app.yaml
+    - ./components/tanzu-java-web-app.yaml
     - ./groups/default-org.yaml
     - ./systems/tap-gui-system.yaml
     - ./domains/tap-gui-domain.yaml
