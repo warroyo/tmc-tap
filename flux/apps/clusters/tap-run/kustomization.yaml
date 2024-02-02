@@ -4,5 +4,5 @@ generatorOptions:
   disableNameSuffixHash: true
 
 resources:
-- ../../../base/acs
+- ../../base/acs
 
