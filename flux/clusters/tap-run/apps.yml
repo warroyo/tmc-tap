@@ -1,7 +1,7 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
-  name: group-apps-post
+  name: cluster-apps
   namespace: tanzu-continuousdelivery-resources
 spec:
   interval: 10m0s
