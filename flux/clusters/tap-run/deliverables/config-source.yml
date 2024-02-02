@@ -1,0 +1,14 @@
+apiVersion: "config.apps.tanzu.vmware.com/v1alpha4"
+kind: ConfigurationSource
+metadata:
+  name: app-config-source
+  namespace: dev
+spec:
+  backends:
+    - type: git
+      uri: https://github.com/warroyo/tmc-tap
+      searchPaths: 
+        - acs-config
+      secretRef:
+        name: github-warroyo-secret
+        namespace: dev
