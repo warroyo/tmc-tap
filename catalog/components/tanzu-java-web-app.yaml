@@ -6,7 +6,7 @@ metadata:
   tags:
     - v1alpha1
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app=backstage'
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tanzu-java-web-app'
     'backstage.io/techdocs-ref': dir:.
 spec:
   type: service
