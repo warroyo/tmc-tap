@@ -8,6 +8,15 @@ metadata:
   name: tanzu-java-web-app
   namespace: dev
 spec:
+  serviceClaims:
+  - name: spring-properties
+    ref:
+      apiVersion: services.apps.tanzu.vmware.com/v1alpha1
+      kind: ResourceClaim
+      name: java-web-app-config-claim
+  env:
+  - name: SPRING_CONFIG_IMPORT
+    value: "optional:configtree:${SERVICE_BINDING_ROOT}/spring-properties/"
   source:
     git:
       ref:
