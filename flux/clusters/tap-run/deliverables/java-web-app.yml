@@ -38,3 +38,15 @@ spec:
   configurationSource: app-config-source
   content:
   - java-web-app/dev
+---
+apiVersion: services.apps.tanzu.vmware.com/v1alpha1
+kind: ResourceClaim
+metadata:
+  name: java-web-app-config-claim
+  namespace: dev
+spec:
+  ref:
+    apiVersion: config.apps.tanzu.vmware.com/v1alpha4
+    kind: ConfigurationSlice
+    name: java-web-app-config-slice
+    namespace: dev
