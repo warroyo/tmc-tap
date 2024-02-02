@@ -28,3 +28,13 @@ spec:
       ref:
         branch: main
     subPath: config/dev/tanzu-java-web-app
+---
+apiVersion: config.apps.tanzu.vmware.com/v1alpha4
+kind: ConfigurationSlice
+metadata:
+  name: java-web-app-config-slice
+  namespace: dev
+spec:
+  configurationSource: app-config-source
+  content:
+  - java-web-app/dev
