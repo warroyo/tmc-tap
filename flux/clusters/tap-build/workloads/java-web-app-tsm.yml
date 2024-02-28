@@ -14,10 +14,12 @@ spec:
         branch: main
       url: https://github.com/warroyo/tanzu-java-web-app-gitops
   params:
-    - name: annotations
-      value:
-        autoscaling.knative.dev/minScale: "1"
     - name: gitops_repository
       value: https://github.com/warroyo/tmc-tap
     - name: gitops_branch
       value: main
+    - name: ports # modification
+      value:
+      - port: 80 # modification
+        containerPort: 8080 # modification
+        name: http # modification
