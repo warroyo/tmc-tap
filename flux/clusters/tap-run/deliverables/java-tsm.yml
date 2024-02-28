@@ -28,3 +28,37 @@ spec:
       ref:
         branch: main
     subPath: config/dev/tanzu-java-web-app-tsm
+---
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: java-web-app
+  namespace: tsm
+spec:
+  gateways:
+  - java-web-app
+  hosts:
+  - tanzu-java-web-app.tsm.onprem.ct-tap.azure.warroyo.com
+  http:
+  - match:
+    - uri:
+        prefix: "/"
+    route:
+    - destination:
+        host: tanzu-java-web-app-tsm
+---
+apiVersion: networking.istio.io/v1beta1
+kind: Gateway
+metadata:
+  name: java-web-app
+  namespace: tsm
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - hosts:
+    - tanzu-java-web-app.tsm.onprem.ct-tap.azure.warroyo.com
+    port:
+      name: http
+      number: 80
+      protocol: HTTP
