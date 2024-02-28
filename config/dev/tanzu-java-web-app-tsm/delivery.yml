@@ -35,7 +35,6 @@ spec:
     metadata:
       annotations:
         apps.tanzu.vmware.com/correlationid: https://github.com/warroyo/tanzu-java-web-app-gitops?sub_path=/
-        autoscaling.knative.dev/minScale: "1"
         boot.spring.io/version: 2.5.14
         conventions.carto.run/applied-conventions: |-
           appliveview-sample/app-live-view-appflavour-check
@@ -109,5 +108,8 @@ spec:
   ports:
   - targetPort: 8080
     port: 8080
+    name: "8080"
+  - targetPort: 8080
+    port: 80
     name: http
 
