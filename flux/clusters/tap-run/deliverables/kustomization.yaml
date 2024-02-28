@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
 - java-web-app.yml
 - config-source.yml
+- java-tsm.yml
