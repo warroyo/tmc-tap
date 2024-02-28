@@ -29,6 +29,7 @@ spec:
     - contour-httpproxy
     - ingress
     - istio-virtualservice
+    - istio-gateway
     provider: azure
     txtOwnerId: ${cluster_name}
     azure:
