@@ -9,7 +9,7 @@ kind: Namespace
 metadata:
   name: #@ ns.name
   labels:
-    #@ if ns.name = "tsm":
+    #@ if ns.name == "tsm":
     istio-injection: enabled
     #@ end
     pod-security.kubernetes.io/enforce: privileged
