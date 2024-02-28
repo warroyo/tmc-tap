@@ -109,5 +109,8 @@ spec:
   ports:
   - targetPort: 8080
     port: 8080
+    name: "8080"
+  - targetPort: 8080
+    port: 80
     name: http
 
