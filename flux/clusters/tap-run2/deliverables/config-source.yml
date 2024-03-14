@@ -9,6 +9,3 @@ spec:
       uri: https://github.com/warroyo/tmc-tap
       searchPaths: 
         - acs-config
-      secretRef:
-        name: github-warroyo-secret
-        namespace: dev
