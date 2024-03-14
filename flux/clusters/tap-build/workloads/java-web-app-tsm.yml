@@ -18,6 +18,8 @@ spec:
       value: https://github.com/warroyo/tmc-tap
     - name: gitops_branch
       value: main
+    - name: vhost
+      value: tanzu-java-web-app.tsm.onprem.ct-tap.azure.warroyo.com
     - name: ports # modification
       value:
       - port: 80 # modification
