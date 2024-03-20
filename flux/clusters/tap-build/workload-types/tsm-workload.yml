@@ -109,12 +109,11 @@ spec:
       hosts:
       - #@ data.values.params.vshost
       http:
-      - match:
-        - uri:
-            prefix: "/"
-        route:
+      - route:
         - destination:
             host: #@ data.values.workload.metadata.name
+            port: 
+              number: 80
     ---
     apiVersion: networking.istio.io/v1beta1
     kind: Gateway
