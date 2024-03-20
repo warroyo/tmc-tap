@@ -143,7 +143,7 @@ spec:
         kind: ClusterIssuer
         name: letsencrypt-prod
       secretName: #@ data.values.workload.metadata.name + "-ingress-cert"
-      commonName: data.values.params.vshost
+      commonName: #@ data.values.params.vshost
       dnsNames:
       - data.values.params.vshost
 
