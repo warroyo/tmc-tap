@@ -142,7 +142,7 @@ spec:
     - tanzu-java-web-app.tsm.onprem.ct-tap.azure.warroyo.com
     port:
       name: https
-      number: 80
+      number: 443
       protocol: HTTPS
     tls:
       mode: SIMPLE
