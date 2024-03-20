@@ -145,7 +145,7 @@ spec:
       secretName: #@ data.values.workload.metadata.name + "-ingress-cert"
       commonName: #@ data.values.params.vshost
       dnsNames:
-      - data.values.params.vshost
+      - #@ data.values.params.vshost
 
     #@ end
 
