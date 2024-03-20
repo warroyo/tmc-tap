@@ -152,6 +152,7 @@ apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
   name: tanzu-java-web-app-tsm
+  namespace: istio-system
 spec:
   issuerRef:
     kind: ClusterIssuer
