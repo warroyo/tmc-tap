@@ -157,7 +157,7 @@ spec:
     kind: ClusterIssuer
     name: letsencrypt-prod
   secretName: tanzu-java-web-app-tsm-ingress-cert
-  commonName: data.values.params.vshost
+  commonName: tanzu-java-web-app.tsm.onprem.ct-tap.azure.warroyo.com
   dnsNames:
   - data.values.params.vshost
 
