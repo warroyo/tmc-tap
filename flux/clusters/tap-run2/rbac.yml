@@ -20,4 +20,5 @@ roleRef:
   name: cert-man-deliverable-role
 subjects:
 - kind: ServiceAccount
-  name: system:serviceaccount:tsm:default
+  name: default
+  namespace: tsm
