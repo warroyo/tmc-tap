@@ -67,7 +67,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: dev.registry.tanzu.vmware.com/warroyo/workloads/tanzu-java-web-app-tsm-dev@sha256:ae6f84f3bbfc81b4049462008b0c6ab1f7dd0f896f1a9f4b77571ee1827a5f64
+        image: dev.registry.tanzu.vmware.com/warroyo/workloads/tanzu-java-web-app-tsm-dev@sha256:6dcab52dd934cfaa7aa91e8a08b6691d040ee799026d98cac2cecfbf2e57d6da
         name: workload
         ports:
         - containerPort: 8080
