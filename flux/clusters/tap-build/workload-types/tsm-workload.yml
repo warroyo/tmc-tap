@@ -128,7 +128,7 @@ spec:
         - #@ data.values.params.vshost
         port:
           name: https
-          number: 80
+          number: 443
           protocol: HTTPS
         tls:
           mode: SIMPLE
