@@ -138,6 +138,7 @@ spec:
     kind: Certificate
     metadata:
       name: #@ data.values.workload.metadata.name
+      namespace: istio-system
     spec:
       issuerRef:
         kind: ClusterIssuer
