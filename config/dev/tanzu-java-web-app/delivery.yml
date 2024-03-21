@@ -54,7 +54,7 @@ spec:
           value: optional:configtree:/spring-properties/
         - name: JAVA_TOOL_OPTIONS
           value: -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: dev.registry.tanzu.vmware.com/warroyo/workloads/tanzu-java-web-app-dev@sha256:c8586628a8ee00c7607f8474bd2ceb37835ed39c8560160a198abddb331a9273
+        image: dev.registry.tanzu.vmware.com/warroyo/workloads/tanzu-java-web-app-dev@sha256:e8f9aa23c7bb124fc5c91b8c2f2ce7fb744a87f2f5c52fd22a83ae4bd21e9177
         name: workload
         ports:
         - containerPort: 8080
